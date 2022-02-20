@@ -6,9 +6,8 @@ const { token } = require(newLocal);
 // Create a new client instance
 const client = new Client({ intents: [ Intents.FLAGS.GUILDS ] });
 
-
 client.commands = new Collection();
-const COMMAND_FILES = FS.readdirSync("./src/commands").filter(file => file.endsWith(".js"));
+const COMMAND_FILES = FS.readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 for (const FILE of COMMAND_FILES) {
     const COMMAND = require(`./commands/${FILE}`);
