@@ -16,6 +16,11 @@
     "discord.js": "^13.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.9.0"
+    "@phoenix35/eslint-config": "github:Phoenix35/eslint-config",
+    "eslint": "^8.9.0",
+    "eslint-plugin-jsdoc": "^37.9.4"
+  },
+  "engines": {
+    "node": ">=16.3.0"
   }
 }
